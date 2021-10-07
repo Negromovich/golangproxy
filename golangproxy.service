@@ -1,0 +1,11 @@
+[Unit]
+Description=GoLang Proxy
+
+[Service]
+Type=simple
+ExecStart=/home/morgen/proxy/golangproxy -port 8080 -user morgen -pass <pass>
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
